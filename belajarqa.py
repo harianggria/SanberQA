@@ -44,7 +44,7 @@ class TestLogin(unittest.TestCase):
         self.assertEqual(respon_welcome, "User's not found")
         self.assertEqual(respon_berhasil, 'Email atau Password Anda Salah')
 
-    def test_email_blank(self):
+    def test_email_blank(self): #new added to testing if email and password is blank
         driver = self.driver
         driver.get("http://barru.pythonanywhere.com/daftar")
         time.sleep(1)
